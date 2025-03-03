@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+
+* {
+   box-sizing: border-box;
+ }
+  
+ html,
+ body {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   background-color: #ffece6;
+   font-family: 'Poppins', sans-serif;
+ }
+ .page1{
+  position: relative;
+ }
+ body #page2{
+  position: absolute;
+  top: 0px;
+  align-items: center;
+  background-color: #ffece6b2;
+  width: 100%;
+  /* text-align: center; */
+  /* justify-content: center; */
+  display: none;
+ }
+ body #page3{
+  position: absolute;
+  top: 0px;
+  align-items: center;
+  background-color: #ffece6b2;
+  width: 100%;
+  /* text-align: center; */
+  /* justify-content: center; */
+  display: none;
+ }
+ header{
+  width: 100vw;
+  text-align: center;
+ }
+ header img{
+  width: 250px;
+  height: 80px;
+  mix-blend-mode:multiply; 
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+ .rec{
+  background-color: #ed4a0f;
+  opacity: .8;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  transition: all ease 0.5s;
+ }
+ .rec:hover{
+  box-shadow: 0px 10px 30px rgba(108, 99, 99, 0.5);
+  transform: scale(1.05);
+  opacity: 1;
+ }
+ .left-rec{
+  width:50vw;
+  height:fit-content;
+  overflow: hidden;
+ }
+ 
+ .cart-item, .Food_cart{
+  font: 'Poppins', sans-serif;
+  color: #ffece6;
+  /* text-align:center ; */
+  display: flex;
+  justify-content: space-between;
+}
+.Food_cart{
+  font-size: 18px;
+  color: #ffece6;
+}
+.cart-item:hover{
+  color: #ffece6;
+  text-shadow: -2px 2px 2px rgba(1, 0, 0, 0.5);
+  
+}
+ .cart-item span{
+  line-height: 3rem;
+  width: 15%;
+  font-size: 16px;
+}
+
+.Food_cart span{
+  width: 10%;  
+}
+.count-field{
+  width: 15%;
+  margin: auto 0;
+  padding: none;
+  
+}
+.cart-item .count-field .btn{
+  opacity: 0;
+  width: 30%;
+}
+.cart-item:hover .count-field .btn{
+  opacity: 1;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"]{
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #ffece6;
+  text-align:center;
+  width: 30%;
+  outline: none;
+}
+.cart-item:hover .count-field input[type="number"]{
+  color: #ffece6;
+  text-shadow: -2px 2px 2px rgba(1, 0, 0, 0.5);
+}
+.cart-item .PriceSec{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  font-size: 16px;
+  margin: auto 0;
+}
+.ptpbtn{
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  opacity: 0.8;
+}
+.ptpbtn:hover{
+  box-shadow: 0px 10px 30px rgba(108, 99, 99, 0.5);
+  transform: scale(1.02) all ease;
+  opacity: 1;
+}
+.cart-item button{
+  width: 15%;
+}
+.cart-item button, .rec button{
+  
+  background-color: #ffece6;
+  color: #ed4a0f;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 15px;
+  margin: 2px;
+
+}
+.cart-item:hover button{
+  box-shadow: -2px 2px 2px rgba(1, 0, 0, 0.5);
+}
+ .right-rec{
+  width: 30vw;
+  height: auto;
+ }
+h1, p {
+  color: #ffece6;
+}
+h1{
+  margin: 5px;
+}
+
+.ptp{
+
+  display: flex;
+  justify-content: space-between;
+}
+
+ @media (max-width: 800px) {
+  .container{
+    display: block;
+    justify-content: center;
+  }
+  .left-rec{
+    width:90vw;
+   }
+   .cart-item span{
+    width: 10%;
+  }
+  .Food_cart span{
+    width: 10%;  
+  }
+  .count-field{
+    width: 12%;
+  }
+  input[type="number"]{
+    width: 15%;
+  }
+  .right-rec{
+    width: fit-content;
+    height: auto;
+   }
+  
+ }

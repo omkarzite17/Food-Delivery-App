@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+    <title>Document</title>
+
+  </head>
+  <body>
+
+    <header>
+      <div class="header_logo">
+        <img src="photo/logo1.png" alt="FooDeli Logo" />
+        <p id="divider">|</p>
+        <p id="location"></p>
+      </div>
+      <div class="header_searchbar">
+        <input
+          type="text"
+          placeholder="Search food you're looking for...."
+          required
+        />
+        <button type="submit">
+          <img src="photo/icons8-evidence-64.png" alt="searchicon" />
+        </button>
+      </div>
+      <div class="header_viewcart">
+        <button type="submit">
+          <a href="cart.html"><img src="photo/icons8-coffee-bag-64.png" alt="carticon"/></a>
+        </button>
+        <p>Cart</p>
+      </div>
+    </header>
+    <div class="blank"></div>
+    <div class="main">
+    <div class="sidebar">
+      
+        <ul>
+         <li><div class="header">Categories</div></li>
+         <li><a href="#seafood">Seafood</a></li>
+         <li><a href="#">Fast Food</a></li>
+         <li><a href="#">Breakfast</a></li>
+         <li><a href="#">Desserts & Sweets</a></li>
+         <li><a href="#">Drinks</a></li>
+         <li><a href="#">Beverages</a></li>
+         <li><a href="#">Snacks</a></li>
+         <li><a href="#">Cakes, Biscuits and Cookies</a></li>
+         <li><a href="#">Rice Dishes</a></li>
+         <li><a href="#">Noodles</a></li>
+         <li><a href="#">Pasta</a></li>
+         <li><a href="#">Soups</a></li>
+         <li><a href="#">Curries</a></li>
+         <li><a href="#">Chutneys/Pickle</a></li>
+         <li><a href="#stirfry">Stir Fry</a></li>        
+        </ul>
+      
+    </div>
+    <div class="container">
+      <div class="art-board__container">
+        <section id="seafood">
+          <div class="card">
+          <div class="card__image">
+            <img
+              src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="Salad"
+            />
+          </div>
+          <div class="card__info">
+            <div class="car__info--title">
+              <h3 name="Salad">Salad</h3>
+              <p>Veggies</p>
+            </div>
+            <div class="card__info--price">
+              <p data-price="80">&#8377 80</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <div class="count-field">
+              <button onclick="decrementCount('item1','Salad')" id="sub">-</button>
+              <input id="item1-count" type="number" value="0" readonly>
+              <button onclick="incrementCount('item1','Salad', '80')" id="add">+</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="seafood"></section>
+        <div class="card">
+          <div class="card__image">
+            <img
+              src="https://images.pexels.com/photos/840216/pexels-photo-840216.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="Fish"
+            />
+          </div>
+          <div class="card__info">
+            <div class="car__info--title">
+              <h3>Fish</h3>
+              <p>Fresh & sweetFresh & sweet Fresh & sweet</p>
+            </div>
+            <div class="card__info--price">
+              <p>&#8377 100</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <div class="count-field">
+              <button onclick="decrementCount('item2','Fish')" id="sub">-</button>
+              <input id="item2-count" type="number" value="0" readonly>
+              <button onclick="incrementCount('item2','Fish', '100')" id="add">+</button>
+            </div>
+          </div>
+        </div>
+      </section>
+        <div class="card">
+          <div class="card__image">
+            <img
+              src="https://images.pexels.com/photos/4001871/pexels-photo-4001871.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              alt="Pizza"
+            />
+          </div>
+          <div class="card__info">
+            <div class="car__info--title">
+              <h3>Pizza</h3>
+              <p>Fresh & sweet</p>
+            </div>
+            <div class="card__info--price">
+              <p>&#8377 180</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <div class="count-field">
+              <button onclick="decrementCount('item3','Pizza')" id="sub">-</button>
+              <input id="item3-count" type="number" value="0" readonly>
+              <button onclick="incrementCount('item3','Pizza', '180')" id="add">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img
+              src="https://images.pexels.com/photos/792028/pexels-photo-792028.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="Sushi"
+            />
+          </div>
+          <div class="card__info">
+            <div class="car__info--title">
+              <h3>Sushi</h3>
+              <p>Fresh & sweet</p>
+            </div>
+            <div class="card__info--price">
+              <p>&#8377 300</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <div class="count-field">
+              <button onclick="decrementCount('item4','Sushi')" id="sub">-</button>
+              <input id="item4-count" type="number" value="0" readonly>
+              <button onclick="incrementCount('item4','Sushi','300')" id="add">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img
+              src="https://images.pexels.com/photos/907142/pexels-photo-907142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              alt="Dessert"
+            />
+          </div>
+          <div class="card__info">
+            <div class="car__info--title">
+              <h3>Dessert</h3>
+              <p>Fresh & sweet</p>
+            </div>
+            <div class="card__info--price">
+              <p>&#8377 160</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <div class="count-field">
+              <button onclick="decrementCount('item5','Dessert')" id="sub">-</button>
+              <input id="item5-count" type="number" value="0" readonly>
+              <button onclick="incrementCount('item5','Dessert','160')" id="add">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img
+              src=" https://images.pexels.com/photos/433145/pexels-photo-433145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Salad"
+            />
+          </div>
+          <div class="card__info">
+            <div class="car__info--title">
+              <h3>Coffee</h3>
+              <p>Drink</p>
+            </div>
+            <div class="card__info--price">
+              <p>&#8377 80</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <div class="count-field">
+              <button onclick="decrementCount('item6','Coffee')" id="sub">-</button>
+              <input id="item6-count" type="number" value="0" readonly>
+              <button onclick="incrementCount('item6','Coffee','80')" id="add">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img
+              src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="Salad"
+            />
+          </div>
+          <div class="card__info">
+            <div class="car__info--title">
+              <h3>Burger</h3>
+              <p>Fast Food</p>
+            </div>
+            <div class="card__info--price">
+              <p>&#8377 170</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <div class="count-field">
+              <button onclick="decrementCount('item7','Burger')" id="sub">-</button>
+              <input id="item7-count" type="number" value="0" readonly>
+              <button onclick="incrementCount('item7','Burger','170 ')" id="add">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img
+              src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="Salad"
+            />
+          </div>
+          <div class="card__info">
+            <div class="car__info--title">
+              <h3>Biryani</h3>
+              <p>Main Course</p>
+            </div>
+            <div class="card__info--price">
+              <p>&#8377 280</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <div class="count-field">
+              <button onclick="decrementCount('item8','Biryani')" id="sub">-</button>
+              <input id="item8-count" type="number" value="0" readonly>
+              <button onclick="incrementCount('item8','Biryani','280')" id="add">+</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+  </div>  
+  </div>
+  <script src="javascript/menu.js"></script>
+  <script src="javascript/getLocation.js"></script>
+
+  </body>
+    
+</html>

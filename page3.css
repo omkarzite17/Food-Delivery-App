@@ -1,0 +1,50 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+   }
+#page3{
+    font-family:"Poppins", sans-serif;
+    background: #ffece6;
+    color: #ffece6
+}
+
+#confetti{
+  position: absolute;
+  left:0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#page3 .card{
+    text-align: center;
+}
+
+.card h1{
+  font-size: 22px;
+}
+.card h2{
+    font-size: 18px;
+  }
+  .card h3{
+    font-size: 16px;
+  }
+.card-holder h2{
+    margin: 10px;
+}
+.card .mid_section{
+    height: 50%;
+    margin: 30px;
+    font-style: italic;
+    line-height: 1.6rem;
+}
+.card .mid_section img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+}
+

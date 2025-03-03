@@ -1,0 +1,140 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+#page2{
+    font-family:"Poppins", sans-serif;
+    background: #ffece6;
+    position: fixed;
+    overflow: hidden;
+}
+
+#page2 .card-holder,#page3 .card-holder{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  height: 100vh;
+  width: 80vw;
+}
+
+#page2 .card,#page3 .card{
+  position: absolute;
+    background: #ed4a0f;
+    padding: 20px;
+    width: 80%;
+    height: 70%;
+    max-width: 500px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+    margin-left: 20%;
+}
+
+.card h2, .card h3{
+  color: #ffece6
+}
+.card-holder h2{
+    margin: 10px;
+}
+.payopt{
+  /* border: 1px solid #fff; */
+  margin: 5px 0px;
+  padding: 5px 0px;
+}
+.card-holder hr{
+  border: 1px solid #48484876;
+  /* box-shadow: 0px 0px 1px 2px#605f5f76; */
+}
+
+.plan input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+  }
+
+.plan {
+    cursor: pointer;
+    width: 48.5%;
+  }  
+.plan .plan-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+  }
+.plan .plan-content img {
+    margin-right: 30px;
+    height: 72px;
+  }
+.plan .plan-details span {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffece6;
+  }
+
+.plan .plan-content:hover {
+  background-color: #48484876;
+  color: #fff6f3;
+  transform: scale(1.02) all ease;
+  }
+
+  
+  .plan input[type="radio"]:not(:checked) + .plan-content:after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    right: 20px;
+    top: 15px;
+    border-radius: 100%;
+    -webkit-box-shadow: 0px 0px 0px 2px #395515;
+    box-shadow: 0px 0px 0px 2px #4FBF26;
+    border-bottom: 0px solid #4FBF26;
+    transition:  border-bottom 0.3s;
+  } 
+
+.plan input[type="radio"]:checked + .plan-content:after  {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background: #4FBF26;
+    right: 20px;
+    top: 15px;
+    border-radius: 100%;
+    border: 3px solid #411302b7;
+    box-shadow: 0px 0px 0px 2px #4FBF26;
+    
+  } 
+
+.plan input[type="radio"]:checked + .plan-content {
+    border-bottom: 5px solid #4FBF26;
+    background: #411302b7;
+  } 
+   
+.card .bottom_div{
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+  justify-content: center;
+  text-align: center;
+  height: 30%;
+  line-height: 40px;
+}
+.card .bottom_div .btn{
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #ed4a0f;
+  font-weight: 600;
+}
+.card .bottom_div .btn:not(:disabled){
+  box-shadow: 0px 10px 30px rgba(108, 99, 99, 0.5);
+  transform: scale(1.5) all ease;
+}

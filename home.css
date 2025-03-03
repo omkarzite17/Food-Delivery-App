@@ -1,0 +1,274 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+.main{
+  display: flex; 
+  overflow: hidden;
+	position: relative;
+}
+
+.main .left{
+  margin-top: 50px;
+
+}
+.main .left nav img{
+  width: 40%;
+}
+.main .left nav{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.left nav button{
+  background-color: transparent;
+  border: none;
+  margin: 45px 15px;
+  cursor: pointer;
+}
+.left nav button:hover{
+  transform: scale(1.1);
+}
+.left nav button a{
+  color: #181818;
+  font-size: 20px;
+}
+.left nav .signup{
+  width:110px;
+  height:45px;
+  font-size: 18px;
+  background-color: #181818;
+  border: none;
+}
+.left nav .signup{
+  color: white;
+}
+.left nav .login a{
+  font-weight: 600;
+}
+.main .main-img{
+  width: 530px;
+}
+.main .left .txt {
+  margin-left: 63px;
+  margin-top: 77px;
+}
+.left .txt h1{
+  font-size: 43px;
+}
+.left .txt p {
+  margin-top: 22px;
+  font-size: 22px;
+}
+.left .txt .inp{
+  display: flex;
+  margin-top:  22px;
+}
+.left .txt input{
+  width: 400px;
+  height: 30px;
+  border: 1px solid rgb(241, 76, 16);
+  border-right: none;
+  padding: 8px;
+  outline: none;
+}
+.left .txt .inp button{
+  width: 120px;
+  background-color: rgb(237, 74, 15);
+  border: none; 
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.card{
+
+  background-color: #ed4a0f;
+  text-align: center;
+  color: white;
+  padding: 24px;
+}
+#title{
+  font-size: 2rem;
+}
+.card .innercard{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.card .crd{
+  width: 33%;
+  margin: 15px ;
+  padding: 20px;
+}
+.card .crd img{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 50%;
+}
+.card .innercard .crd table{
+  margin: auto;
+  border-spacing: 15px;
+
+}
+.restaurant{
+    display: flex;
+  /* justify-content: center; */
+  justify-content: right;
+  margin: 0 50px;
+}
+/* .restaurant img{
+  width: 50%;
+
+} */
+
+.restaurant .text{
+  margin-top: 84px;
+
+}
+.restaurant .text h1{
+  font-size: 44px;
+
+}
+.restaurant .text img{
+  margin-top: 22px;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: rgb(34, 33, 33);
+  color:white;
+  padding: 100px;
+}
+footer .list{
+  margin-inline: 63px;
+}
+footer .list p{
+
+  line-height: 2.5;
+}
+footer .list img{
+  width: 53%;
+  margin-top: 11px;
+}
+
+.restaurant .map_container{
+  width: 50%;
+}
+.restaurant  .ipad {
+  
+  z-index: 0;
+  width: 500px;
+  transform: rotate(90deg);
+  margin-top: 50px;
+  margin-right: 50px;
+  position:absolute;
+}
+@media screen and (max-width:1200px){
+  .main .left nav img{
+    width: 30%;
+    height: 50%;
+  }
+  .left nav button{
+    margin: 5px 5px;
+  }
+  .left nav button a{
+    font-size: 16px;
+  }
+  .left nav .signup{
+    width:90px;
+    height:35px;
+    font-size: 14px;
+  }
+  .main #pav-bhaji{
+    width: 400px;
+    height: 450px;
+  }
+  .main .left .txt {
+    margin-left: 33px;
+    margin-top: 47px;
+  }
+  .left .txt h1{
+    font-size: 35px;
+  
+  }
+  .left .txt p {
+    margin-top: 16px;
+    font-size: 18px;
+  }
+  .left .txt .inp{
+    margin-top:  16px;
+  }
+  .left .txt input{
+    width: 300px;
+
+  }
+  .left .txt .inp button{
+    width: 100px;    
+    font-size: 16px;
+  }
+ 
+  #title{
+    font-size: 1.5rem;
+  }
+  
+  .card .crd img{
+    width: 80px;
+    height: 80px;
+  }
+  .restaurant{
+    display: block;
+    margin: 0 25px;
+  }
+  .restaurant .text{
+    margin-top: 34px;
+  }
+  .restaurant .text h1{
+   font-size: 34px;
+  }
+  .restaurant .text .stores{
+    width: 40%;
+    height: 50%;
+  }
+  .restaurant  .ipad {
+   position: relative;
+    width: 450px;
+    margin-left: 96px;
+    margin-top: 5px;
+    transform: rotate(90deg);
+  }
+
+}
+@media screen and (max-width:600px) {
+  .main #pav-bhaji{
+    display: none;
+  }
+  .card .innercard{
+    display: block;
+  }
+  .card .crd{
+    text-align: center;
+    width: 100%;
+    margin: 0px ;
+    padding: 0px;
+  }
+ 
+  .restaurant{
+    display: none;
+  }
+  footer{
+    display: block;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: rgb(34, 33, 33);
+    color:white;
+    padding: 100px;
+  }
+  
+}

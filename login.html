@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/af4ce0c4fa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sign in & Sign up Form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <!-- <div id="login-section"> -->
+          <form
+            action="menu.html"
+            method="GET"
+            class="login-in-form"
+            id="login-in-form"
+          >
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input
+                type="text"
+                placeholder="Email or Mobile Number"
+                id="email_number"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                placeholder="Password"
+                id="loginpassword"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Login"
+              name=" Login"
+              class="btn1 solid"
+            />
+            <input
+              type="button"
+              onclick="alertFunction()"
+              value="Forgot Password"
+              name="ForgotPassword"
+              class="btn2 solid"
+            />
+
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <!-- </div> -->
+
+          <!-- <div class="signup-section"> -->
+          <form
+            action="menu.html"
+            class="sign-up-form"
+            id="sign-up-form"
+            method="GET"
+          >
+            <h2 class="title signuptitle">Sign up</h2>
+            <div class="row">
+              <div class="input-field column">
+                <i class="fas fa-user"></i>
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  id="firstName"
+                  required
+                />
+              </div>
+              <div class="input-field column">
+                <i class="fas fa-user"></i>
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  id="lastName"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field column">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email" id="mailId" required />
+              </div>
+              <div class="input-field column">
+                <i class="fas fa-phone"></i>
+                <input
+                  type="text"
+                  placeholder="Mobile Number"
+                  id="mobileNumber"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field column">
+                <i class="fas fa-lock"></i>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  id="password"
+                  required
+                />
+              </div>
+              <div class="input-field column">
+                <i class="fas fa-lock"></i>
+                <input
+                  type="password"
+                  placeholder="Confirm Password"
+                  id="confirmPassword"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field column">
+                <i class="fas fa-house"></i>
+                <input
+                  type="text"
+                  placeholder="Address 1"
+                  id="addressLine1"
+                  required
+                />
+              </div>
+              <div class="input-field column">
+                <i class="fas fa-house"></i>
+                <input
+                  type="text"
+                  placeholder="Address 2"
+                  id="addressLine2"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field column">
+                <i class="fas fa-location-dot"></i>
+                <select name="state" id="state" onchange="populateCities()">
+                  <option value="Select State">Select State</option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Bihar">Bihar</option>
+                  <option value="Gujarat">Gujarat</option>
+                  <option value="Karnataka">Karnataka</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value="Tamil Nadu">Tamil Nadu</option>
+                </select>
+              </div>
+              <div class="input-field column">
+                <i class="fas fa-city"></i>
+                <select name="city" id="city">
+                  <option value="">Select City</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field column">
+                <i class="fas fa-location"></i>
+                <input type="text" placeholder="Pin Code" />
+              </div>
+              <div class="checkbox column">
+                <label>
+                  <input type="checkbox" checked="" /> I agree to the terms and
+                  conditions.
+                </label>
+              </div>
+            </div>
+            <div class="row buttons">
+              <input type="reset" class="btn2" value="Clear" />
+              <input type="submit" class="btn1" value="Sign up" />
+            </div>
+
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <!-- </div> -->
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+              Signing up is quick and easy. Simply fill out the details to
+              create your account. We'll keep your information secure and never
+              share it with third parties.
+            </p>
+            <button class="btn1 transparent" id="sign-up-btn">Sign up</button>
+          </div>
+          <img src="photo/login-illustration-1.png" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>Sign In if you have already created an account previously.</p>
+            <button class="btn1 transparent" id="sign-in-btn">Sign in</button>
+          </div>
+          <img src="photo/login-illustration-2.png" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2.0"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>OZFood</title>
+    <link href="css/home.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .restaurant #myMap {
+      width: 582px;
+      height: 403px;
+      margin-right: 9px;
+      margin-top: 185.5px;
+      position: absolute;
+      justify-content: right;
+    }
+    @media screen and (max-width: 1200px) {
+      .restaurant #myMap {
+        width: 531px;
+        height: 368px;
+        margin-left: 56px;
+        margin-top: 0px;
+        position: absolute;
+        justify-content: center;
+        top: 208.5%;
+      }
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div class="left">
+        <nav>
+          <img src="photo/logo1.png" alt="Foodeli Logo" />
+          <div class="btn">
+            <button class="login" id="login">
+              <a href="login.html">Login</a>
+            </button>
+            <button onclick="clickOtherButton()" class="signup">Signup</button>
+
+            <!-- <button class="signup" id="signup">
+              <a href="login.html">SignUp</a>
+            </button> -->
+          </div>
+        </nav>
+        <div class="txt">
+          <h1>Order food at your door step...</h1>
+          <p>Check for the cities we are availabe in</p>
+          <div class="inp">
+            <input type="text" placeholder="Enter Your Delivery location" />
+            <button>Find Food</button>
+          </div>
+          <p>Login first to order your food.</p>
+          <p>If you are new! Please SignUp</p>
+        </div>
+      </div>
+      <div class="login"></div>
+      <img
+        id="pav-bhaji"
+        src="photo/pav-bhaji.jpg"
+        alt="pav-bhaji"
+        width="599px"
+        height="589px"
+      />
+    </div>
+
+    <div class="card">
+      <p id="title">Popular Cities in India</p>
+      <div class="innercard">
+        <div class="crd">
+          <img src="photo/mumbai.png" alt="" />
+          <h3>Mumbai</h3>
+          <table>
+            <tr>
+              <td>Andheri</td>
+              <td>Bandra</td>
+            </tr>
+            <tr>
+              <td>Borivali</td>
+              <td>Dahisar</td>
+            </tr>
+            <tr>
+              <td>Goregaon</td>
+              <td>Jogeshwari</td>
+            </tr>
+            <tr>
+              <td>Juhu</td>
+              <td>Kandivali</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="crd">
+          <img src="photo/rashtrapati-bhavan.png" alt="" />
+          <h3>Delhi</h3>
+          <table>
+            <tr>
+              <td>Adarsh Nagar</td>
+              <td>Delhi Cantonment</td>
+            </tr>
+            <tr>
+              <td>Delhi Sarai Rohilla</td>
+              <td>Delhi Shahdara</td>
+            </tr>
+            <tr>
+              <td>Hazrat Nizamuddin</td>
+              <td>New Delhi</td>
+            </tr>
+            <tr>
+              <td>Sadar Bazar</td>
+              <td>Sarojini Nagar</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="crd">
+          <img src="photo/bangalore.png" alt="" />
+          <h3>Banglore</h3>
+          <table>
+            <tr>
+              <td>Indiranagar</td>
+              <td>Jayanagar</td>
+            </tr>
+            <tr>
+              <td>J. P. Nagar</td>
+              <td>Koramangala</td>
+            </tr>
+            <tr>
+              <td>Krishnarajapura</td>
+              <td>Pulikeshi Naga</td>
+            </tr>
+            <tr>
+              <td>Jogeshwari</td>
+              <td>Shivaji Nagar</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="restaurant">
+      <div class="text">
+        <h1>Locate the Restaurants or Cafe near you.</h1>
+        <p>
+          Click on the
+          <img
+            src="photo/locateme.png"
+            alt="locateme"
+            width="20px"
+            height="20px"
+          />
+          icon on the Map to Locate your current location <br />
+          known the restaurants near you.
+        </p>
+
+        <p>
+          Order from your favourite restaurant & track on the go with all new
+          FooDeli App.
+        </p>
+        <img
+          class="stores"
+          src="photo/app-store-png-logo-33116.png"
+          alt="AppStore Logo"
+        />
+        <img
+          class="stores"
+          src="photo/play-store-logo-33874.png"
+          alt="Google Playstore Logo"
+          width="510"
+          height="180"
+        />
+      </div>
+      <span class="map_container"></span>
+      <img src="photo/ipad1.png" alt="Phone Screen" class="ipad" />
+      <div id="myMap"></div>
+    </div>
+    <footer>
+      <div class="list">
+        <h2>COMPANY</h2>
+        <p>About us</p>
+        <p>Team</p>
+        <p>Careers</p>
+        <p>Bug Bounty</p>
+      </div>
+      <div class="list">
+        <h2>CONTACT</h2>
+        <p>Help & Support</p>
+        <p>Partner with us</p>
+        <p>Ride with us</p>
+      </div>
+      <div class="list">
+        <h2>LEGAL</h2>
+        <p>Terms & Conditions</p>
+        <p>Refund & Cancellation</p>
+        <p>Privacy Policy</p>
+        <p>Cookie Policy</p>
+      </div>
+      <div class="list">
+        <img src="photo/app-store-png-logo-33116.png" alt="AppStore Logo" />
+        <img
+          src="photo/play-store-logo-33874.png"
+          alt="Google Playstore Logo"
+          id="googlePlaystorelogo"
+        />
+      </div>
+    </footer>
+  </body>
+  <script src="slider.js"></script>
+  <script type="text/javascript" src="javascript/home.js"></script>
+
+  <script
+    type="text/javascript"
+    src="http://www.bing.com/api/maps/mapcontrol?callback=GetMap"
+    async
+    defer
+  ></script>
+</html>
